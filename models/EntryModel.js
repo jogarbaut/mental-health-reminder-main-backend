@@ -4,6 +4,7 @@ const entrySchema = new mongoose.Schema(
   {
     mood: { type: String, required: true },
     note: { type: String },
+    userID: { type: String, required: true }, // Links the entry to a specific user
   },
   {
     timestamps: true,
